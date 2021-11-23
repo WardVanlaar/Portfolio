@@ -393,19 +393,18 @@ header nav ul li a:hover {
         box-sizing: border-box;
     }
       
-    /*.work {
+    .work {
         display: grid;
         grid-template-columns: 1fr 4fr;
         grid-auto-flow: row;
         padding: 5px 5px;
         margin: 10px;
-    }*/
+    }
 
     /*header[role="banner"]       { grid-area: header; }
     main[role="main"]           { grid-area: main; }
     aside[role="complementary"] { grid-area: aside; }
     footer[role="contentinfo"]  { grid-area: footer; }
-    */
 
     .grid,
     .subgrid {
@@ -438,10 +437,7 @@ header nav ul li a:hover {
           'footer footer footer';
         grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
       }
-    }
-
-
-
+    */
 
 
     .work h1 {
