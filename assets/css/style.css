@@ -74,10 +74,9 @@ header nav {
 
 header nav ul {
     width: 100%;
-    justify-content: center;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     list-style: none;
 }
@@ -120,7 +119,7 @@ header nav ul li a:hover {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 1px solid var(--tertiary-color);
+    border-bottom: 2px solid var(--tertiary-color);
 }
 
 .me div {
@@ -147,7 +146,7 @@ header nav ul li a:hover {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 1px solid var(--tertiary-color);
+    border-bottom: 2px solid var(--tertiary-color);
 }
 
 .work div {
@@ -236,6 +235,29 @@ header nav ul li a:hover {
     opacity: 1;
 }
 
+
+.horiseon-click {
+    background: url("../images/refactor.png") no-repeat;
+    background-position: center;
+    cursor: pointer;
+    border: none;
+    padding: 90px;
+    position: relative;
+    opacity: 0.7;
+}
+.horiseon-click h3 {
+    font-size: 15px;
+    position: absolute;
+    top: 0px;
+    left: 23px;
+    padding: 10px;
+    background-color: var(--tertiary-color);
+}
+
+.horiseon-click:hover {
+    opacity: 1;
+}
+
 .contact {
     display: flex;
     flex-wrap: wrap;
@@ -252,7 +274,6 @@ header nav ul li a:hover {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 1px solid var(--tertiary-color);
 }
 
 .contact div {
@@ -268,4 +289,80 @@ header nav ul li a:hover {
     color: var(--secondary-color);
     font-weight: strong;
     font-size: 14px;
+}
+
+@media screen and (min-width: 768px) {
+    header h1 {
+        font-size: 54px;
+    }
+
+    .hero {
+        padding: 50px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    h1 {
+        font-size: 45px;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+
+    h3 {
+        font-size: 35px;
+    }
+
+    p {
+        font-size: 27px;
+    }
+
+    .stata {
+        display: block;
+    }
+
+    .stata-click {
+        background: url("../images/stata-lg.jfif");
+    }
+
+    .run-buddy-click {
+        background: url("../images/run-buddy-bg-small.jpg");
+    }
+
+    .fanpage-click {
+        background: url("../images/pink-floyd.jpg");
+    }
+
+    .horiseon-click {
+        background: url("../images/refactor.png");
+    }
+
+    .contact div ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        list-style: none;
+    }
+
+    .contact div ul li a {
+        padding: 35px 15px;
+        font-size: 3.3vw;
+    }
+
+@media screen and (min-width: 980px) {
+    header {
+        position: -webkit-sticky;
+        position: sticky;
+        justify-content: space-between;
+        text-align: center;
+    }
+
+    header nav ul li a {
+        padding: 0 10px;
+        font-size: 1.55vw;
+    }
 }
