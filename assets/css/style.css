@@ -297,7 +297,7 @@ header nav ul li a:hover {
     }
 
     h1 {
-        font-size: 45px;
+        font-size: 48px;
     }
 
     h2 {
@@ -356,6 +356,10 @@ header nav ul li a:hover {
 
 @media screen and (min-width: 980px) {
 
+    h1 {
+        font-size: 35px;
+    }
+    
     header {
         position: -webkit-sticky;
         position: sticky;
@@ -422,6 +426,10 @@ header nav ul li a:hover {
         grid-auto-flow: rows;
         padding: 5px 0;
         margin: 10px;
+    }
+
+    .contact h1 {
+        text-align: left;
     }
 
     .contact div ul li a {
