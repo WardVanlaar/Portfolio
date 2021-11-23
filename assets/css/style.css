@@ -235,7 +235,6 @@ header nav ul li a:hover {
     opacity: 1;
 }
 
-
 .horiseon-click {
     background: url("../images/refactor.png") no-repeat;
     background-position: center;
@@ -256,13 +255,6 @@ header nav ul li a:hover {
 
 .horiseon-click:hover {
     opacity: 1;
-}
-
-.contact {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
 }
 
 .contact {
@@ -305,7 +297,7 @@ header nav ul li a:hover {
     }
 
     h1 {
-        font-size: 45px;
+        font-size: 48px;
     }
 
     h2 {
@@ -320,8 +312,17 @@ header nav ul li a:hover {
         font-size: 27px;
     }
 
-    .stata {
-        display: block;
+    header nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        list-style: none;
+    }
+    
+    header nav ul li a {
+        padding: 10px 15px;
+        font-size: 4.55vw;
     }
 
     .stata-click {
@@ -352,17 +353,127 @@ header nav ul li a:hover {
         padding: 35px 15px;
         font-size: 3.3vw;
     }
+}
 
 @media screen and (min-width: 980px) {
+
+    h1 {
+        font-size: 35px;
+    }
+    
     header {
         position: -webkit-sticky;
         position: sticky;
         justify-content: space-between;
-        text-align: center;
+        display: block;
     }
 
     header nav ul li a {
-        padding: 0 10px;
-        font-size: 1.55vw;
+        padding: 10px 15px;
+        font-size: 2vw;
+    }
+
+    .me > * {
+        flex: 1;
+        margin: 10px;
+    }
+
+    .me p {
+        font-size: 20px;
+    }
+
+    .me img {
+        padding: 5px;
+        border: 2px solid var(--tertiary-color);
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+      
+    .work {
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+        grid-auto-flow: row;
+        padding: 5px 5px;
+        margin: 10px;
+    }
+
+    /*header[role="banner"]       { grid-area: header; }
+    main[role="main"]           { grid-area: main; }
+    aside[role="complementary"] { grid-area: aside; }
+    footer[role="contentinfo"]  { grid-area: footer; }
+
+    .grid,
+    .subgrid {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr);
+    }
+
+    .subgrid {
+      width: calc(100% + 2rem);
+      margin: 0 -1rem;
+    }
+
+    .grid-item,
+    .subgrid-item {
+      padding: 1rem;
+    }
+
+    .subgrid {
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+        margin-bottom: 1rem;
+      }
+      .subgrid-item {
+        padding-bottom: 0.25rem;
+    }
+
+    .grid {
+        grid-template-areas:
+          'header header header'
+          'main main aside'
+          'footer footer footer';
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
+      }
+    */
+
+
+    .work h1 {
+        text-align: left;
+    }
+
+    .work h2 {
+        font-size: 20px;
+    }
+
+    .work p {
+        font-size: 15px;
+    }
+
+    .fanpage-click h3 {
+        left: 0;
+    }
+
+    .horiseon-click h3 {
+        left: 0;
+    }
+
+    .contact {
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+        grid-auto-flow: rows;
+        padding: 5px 5px;
+        margin: 10px;
+    }
+
+    .contact h1 {
+        text-align: left;
+    }
+
+    .contact div ul li a {
+        font-weight: strong;
+        font-size: 20px;
     }
 }
