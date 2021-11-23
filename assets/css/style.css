@@ -393,7 +393,7 @@ header nav ul li a:hover {
         box-sizing: border-box;
     }
       
-    /*.work {
+    .work {
         display: grid;
         grid-template-columns: 1fr 4fr;
         grid-auto-flow: row;
@@ -405,7 +405,7 @@ header nav ul li a:hover {
     main[role="main"]           { grid-area: main; }
     aside[role="complementary"] { grid-area: aside; }
     footer[role="contentinfo"]  { grid-area: footer; }
-    */
+    
 
     .grid,
     .subgrid {
