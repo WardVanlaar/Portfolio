@@ -353,6 +353,7 @@ header nav ul li a:hover {
         padding: 35px 15px;
         font-size: 3.3vw;
     }
+}
 
 @media screen and (min-width: 980px) {
 
@@ -392,13 +393,56 @@ header nav ul li a:hover {
         box-sizing: border-box;
     }
       
-    .work {
+    /*.work {
         display: grid;
         grid-template-columns: 1fr 4fr;
         grid-auto-flow: row;
-        padding: 0;
+        padding: 5px 5px;
         margin: 10px;
+    }*/
+
+    /*header[role="banner"]       { grid-area: header; }
+    main[role="main"]           { grid-area: main; }
+    aside[role="complementary"] { grid-area: aside; }
+    footer[role="contentinfo"]  { grid-area: footer; }
+    */
+
+    .grid,
+    .subgrid {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr);
     }
+
+    .subgrid {
+      width: calc(100% + 2rem);
+      margin: 0 -1rem;
+    }
+
+    .grid-item,
+    .subgrid-item {
+      padding: 1rem;
+    }
+
+    .subgrid {
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+        margin-bottom: 1rem;
+      }
+      .subgrid-item {
+        padding-bottom: 0.25rem;
+    }
+
+    .grid {
+        grid-template-areas:
+          'header header header'
+          'main main aside'
+          'footer footer footer';
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
+      }
+    }
+
+
+
+
 
     .work h1 {
         text-align: left;
@@ -424,7 +468,7 @@ header nav ul li a:hover {
         display: grid;
         grid-template-columns: 1fr 4fr;
         grid-auto-flow: rows;
-        padding: 5px 0;
+        padding: 5px 5px;
         margin: 10px;
     }
 
