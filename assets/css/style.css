@@ -58,7 +58,7 @@ header h1 {
     width: 100%;
     text-align: center;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 40px;
     color: var(--secondary-color);
     margin: 0;
     text-shadow: 0 0 10px rgba(63, 112, 141, 0.3);
@@ -162,20 +162,68 @@ header nav ul li a:hover {
     padding: 10px;
 }
 
-.stata, .run-buddy, .my-fanpage, .horiseon, .placeholder {
+.stata, .run-buddy, .fanpage, .horiseon, .placeholder {
     border-bottom: 1px solid var(--tertiary-color);
     padding-bottom: 10px;
 }
 
 .stata-click {
+    background: url("../images/stata-lg.jfif") no-repeat;
+    cursor: pointer;
+    border: none;
     padding: 50px;
-    background-image: url("../images/stata-lg.jfif");
     position: relative;
 }
-
 .stata-click h3 {
     font-size: 15px;
     position: absolute;
-    bottom: 0px;
+    top: 0px;
     left: 0px;
+    padding: 10px;
+    background-color: var(--tertiary-color);
+}
+
+.stata-click:hover {
+    background-image:cross-fade(0.5);
+}
+
+.run-buddy-click {
+    background: url("../images/run-buddy-bg-small.jpg") no-repeat;
+    cursor: pointer;
+    border: none;
+    padding: 50px;
+    position: relative;
+}
+.run-buddy-click h3 {
+    font-size: 15px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    padding: 10px;
+    background-color: var(--tertiary-color);
+}
+
+.run-buddy-click:hover {
+    background-image:cross-fade(0.5);
+}
+
+.fanpage-click {
+    background: url("../images/pink-floyd.jpg") no-repeat;
+    background-position: center;
+    cursor: pointer;
+    border: none;
+    padding: 50px;
+    position: relative;
+}
+.fanpage-click h3 {
+    font-size: 15px;
+    position: absolute;
+    top: 0px;
+    left: 23px;
+    padding: 10px;
+    background-color: var(--tertiary-color);
+}
+
+.fanpage-click:hover {
+    background-image:cross-fade(0.5);
 }
