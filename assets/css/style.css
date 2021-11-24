@@ -373,13 +373,15 @@ header nav ul li a:hover {
         font-size: 2vw;
     }
 
-    .me > * {
-        flex: 1;
-        margin: 10px;
+    .me h1 {
+        padding: 0;
+        margin: 0;
+        text-align: left;
     }
 
     .me p {
         font-size: 20px;
+        padding: 25px 0 15px 0;
     }
 
     .me img {
@@ -400,12 +402,6 @@ header nav ul li a:hover {
         padding: 5px 5px;
         margin: 10px;
     }
-
-    /*header[role="banner"]       { grid-area: header; }
-    main[role="main"]           { grid-area: main; }
-    aside[role="complementary"] { grid-area: aside; }
-    footer[role="contentinfo"]  { grid-area: footer; }
-    
 
     .grid,
     .subgrid {
@@ -433,16 +429,16 @@ header nav ul li a:hover {
 
     .grid {
         grid-template-areas:
-          'header header header'
-          'main main aside'
-          'footer footer footer';
-        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
+          'header header'
+          'main main'
+          'footer footer';
+        grid-template-columns: minmax(0, 1fr) minmax(0, 3fr);
       }
-    */
-
 
     .work h1 {
         text-align: left;
+        padding: 0;
+        margin: 0;
     }
 
     .work h2 {
