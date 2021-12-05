@@ -426,11 +426,16 @@ header nav ul li a:hover {
       padding: 1rem;
     }
 
+    .stata-click {
+        height: 300px;
+    } 
+
     .subgrid {
         grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
         margin-bottom: 1rem;
       }
-      .subgrid-item {
+
+    .subgrid-item {
         padding-bottom: 0.25rem;
     }
 
